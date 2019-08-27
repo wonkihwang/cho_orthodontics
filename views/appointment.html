@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cho Orthodontics - Appointment Request</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+    <!-- CUSTOM -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../javascript/script.js"></script>
+    <link rel="icon" href="../img/cho_logo_v2.jpg">
+</head>
+
+<body>
+    <div class="header">
+        <a href="./main.html"><img src="../img/cho_logo_h.jpg" id="cho_logo" alt="Logo" /></a>
+    </div>
+    <hr class="col-10" style="margin-bottom:0;" />
+
+    <div class="shadow" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <img src="../img/cho_logo_v2.jpg" width="40">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html">Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="practice.html">Our Practice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="procedures.html">Procedures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="invisalign.html">Invisalign</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Smile Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient.html">Patient Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link selected" href="#">Appointment Request</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="bgimg-7"></div>
+        <div class="content-line"></div>
+
+        <div class="content-body">
+            <div class="container">
+                <div class="row justify-content-center mt-4 pt-4">
+                    <div class="col-md-10">
+                        <h3 class="text-center font-weight-bold">Appointment Request</h3>
+                        <hr class="my-5" />
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <p class="text-justify">
+                            The first step towards a beautiful, healthy smile is to schedule an appointment. Please contact our office by phone or complete the appointment request form below. Our scheduling coordinator will contact you to confirm your appointment.
+                            <br />
+                            <br />
+                            Please do not use this form to cancel or change an existing appointment.
+                        </p>
+                    </div>
+                </div>
+                <br />
+
+                <!---------------------- APPOINTMENT FORM BEGINS -------------------->
+
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label for="appointment_name">Name <small style="color:red;">(Required)</small></label>
+                            <input type="text" class="form-control input-sm" id="appointment_name" name="appointment_name" />
+                        </div>
+                    </div>
+                    <div class="col-md-5"></div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label for="appointment_address">Address</label>
+                            <input type="text" class="form-control input-sm" id="appointment_address" name="appointment_address" />
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label for="appointment_city">City</label>
+                            <input type="text" class="form-control input-sm" id="appointment_city" name="appointment_city" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label for="appointment_prov">Province</label>
+                            <select class="form-control input-sm" id="appointment_prov" name="appointment_prov">
+                                <option value="" selected hidden>-- Select --</option>
+                                <option value="Ontario">Ontario</option>
+                                <option value="Quebec">Quebec</option>
+                                <option value="Nova Scotia">Nova Scotia</option>
+                                <option value="New Brunswick">New Brunswick</option>
+                                <option value="Manitoba">Manitoba</option>
+                                <option value="British Columbia">British Columbia</option>
+                                <option value="Prince Edward Island">Prince Edward Island</option>
+                                <option value="Saskatchewan">Saskatchewan</option>
+                                <option value="Alberta">Alberta</option>
+                                <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                                <option value="Northwest Territories">Northwest Territories</option>
+                                <option value="Yukon">Yukon</option>
+                                <option value="Nunavut">Nunavut</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label for="appointment_postal">Postal Code</label>
+                            <input type="text" maxlength="6" class="form-control input-sm" id="appointment_postal" name="appointment_postal" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label for="appointment_phone">Phone <small style="color:red;">(Required)</small></label>
+                            <input type="text" maxlength="12" class="form-control input-sm phone_num" id="appointment_phone" name="appointment_phone" />
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label for="appointment_email">Email</label>
+                            <input type="email" class="form-control input-sm" id="appointment_email" name="appointment_email" />
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <label class="mr-4" for="appointment_current">Are you a current patient?</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="appointment_current" id="appointment_current_yes" value="YES">
+                            <label class="form-check-label" for="appointment_current_yes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="appointment_current" id="appointment_current_no" value="NO" checked>
+                            <label class="form-check-label" for="appointment_current_no">No</label>
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <label class="mr-4" for="appointment_time">Best time(s) to call?</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="appointment_time_morning" name="appointment_time_morning" value="MORNING">
+                            <label class="form-check-label" for="appointment_time_morning">Morning</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="appointment_time_noon" name="appointment_time_noon" value="NOON">
+                            <label class="form-check-label" for="appointment_time_noon">Noon</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="appointment_time_afternoon" name="appointment_time_afternoon" value="AFTERNOON">
+                            <label class="form-check-label" for="appointment_time_afternoon">Afternoon</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="appointment_time_evening" name="appointment_time_evening" value="EVENING">
+                            <label class="form-check-label" for="appointment_time_evening">Evening</label>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <label class="mr-4 h6 text-secondary" for="appointment_day">Preferred day(s) of the week for an appointment?</label>
+                        <br />
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="appointment_day_any" name="appointment_day_any" value="ANY" checked>
+                            <label class="form-check-label" for="appointment_day_any">Any Day</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="appointment_day_mon" name="appointment_day_mon" value="MON">
+                            <label class="form-check-label" for="appointment_day_mon">Monday</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="appointment_day_tue" name="appointment_day_tue" value="TUE">
+                            <label class="form-check-label" for="appointment_day_tue">Tuesday</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="appointment_day_wed" name="appointment_day_wed" value="WED">
+                            <label class="form-check-label" for="appointment_day_wed">Wednesday</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="appointment_day_thu" name="appointment_day_thu" value="THU">
+                            <label class="form-check-label" for="appointment_day_thu">Thursday</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="appointment_day_fri" name="appointment_day_fri" value="FRI">
+                            <label class="form-check-label" for="appointment_day_fri">Friday</label>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <label class="mr-4 h6 text-secondary" for="appointment_ptime">Preferred time(s) for an appointment?</label>
+                        <br />
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="appointment_ptime_any" name="appointment_ptime_any" value="ANY" checked>
+                            <label class="form-check-label" for="appointment_ptime_any">Any Time</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="appointment_ptime_morning" name="appointment_ptime_morning" value="MORNING">
+                            <label class="form-check-label" for="appointment_ptime_morning">Morning</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="appointment_ptime_afternoon" name="appointment_ptime_afternoon" value="AFTERNOON">
+                            <label class="form-check-label" for="appointment_ptime_afternoon">Afternoon</label>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <label class="mr-4 h6 text-secondary">Please describe the nature of your appointment (e.g., consultation, check-up, etc.):</label>
+                        <br />
+                        <textarea id="appointment_desc" name="appointment_desc" rows="4" style="width:100%;"></textarea>
+                    </div>
+                </div>
+                <br />
+                <br />
+
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <button type="button" id="appointment_submit_btn" class="btn btn-info">Send Request</button>
+                    </div>
+                </div>
+                <br />
+
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <small class="text-secondary">Note: Messages sent using this form are not considered private. Please contact our office by telephone if sending highly confidential or private information.</small>
+                    </div>
+                </div>
+                <br />
+
+                <!---------------------- APPOINTMENT FORM ENDS -------------------->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer mt-5">
+        <div class="p-2" style="background-color:#dedede;"></div>
+        <footer class="page-footer font-small bg-light pt-4 px-5 pb-3">
+            <div class="container-fluid text-center text-md-left">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 mt-md-0 mt-3">
+                        <h3 class="text-uppercase" style="font-weight:900;">CHO ORTHODONTICS</h3>
+                        <h6>Jangyeun Janice Cho, DMD, MSc, FRCD(C)</h6>
+                        <div style="border:1px solid #efefef;margin-bottom:16px;"></div>
+                        <p style="font-size:14px;">8750 Bayview Ave Unit 4
+                            <br />Richmond Hill, ON Canada L4B 4V9
+                            <br />Phone: <a href="tel:905-597-7992">(905) 597-7992</a>
+                            <br /><a href="mailto:info@Choyoursmile.com">info@Choyoursmile.com</a></p>
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <div class="col-md-1 mb-md-0 mb-3"></div>
+
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Office Hours</h5>
+                        <p>MON: Closed
+                            <br />TUE: 09:30am - 5:30pm
+                            <br />WED: Closed
+                            <br />THU: 09:30am - 5:30pm
+                            <br />FRI: 01:00am - 6:00pm <span style="color:red;font-size:14px;">*</span>
+                            <br />SAT: 10:00am - 4:00pm <span style="color:red;font-size:14px;">*</span>
+                            <br /><span style="color:red;font-size:10px;">* Alternating Friday and Saturday - Closed</span>
+                        </p>
+                    </div>
+
+                    <!-- <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Make an Appointment</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 4</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </footer>
+        <div class="bg-dark py-2">
+            <div class="text-center mt-3">
+                <ul class="list-unstyled list-inline text-center text-white">
+                    <li class="list-inline-item mr-4">
+                        Get connected with us on social networks!
+                    </li>
+                    <li class="list-inline-item mx-2">
+                        <a href="https://www.facebook.com/choyoursmile/" class="btn-floating btn-fb mx-1" style="color:inherit;">
+                            <i class="fab fa-facebook-f fa-2x"> </i>
+                        </a>
+                    </li>
+                    <!-- <li class="list-inline-item mx-2">
+                        <a class="btn-floating btn-tw mx-1" style="color:inherit;">
+                            <i class="fab fa-twitter fa-2x"> </i>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cho Orthodontics - Practice</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+    <!-- CUSTOM -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../javascript/script.js"></script>
+    <link rel="icon" href="../img/cho_logo_v2.jpg">
+</head>
+
+<body>
+    <div class="header">
+        <a href="./main.html"><img src="../img/cho_logo_h.jpg" id="cho_logo" alt="Logo" /></a>
+    </div>
+    <hr class="col-10" style="margin-bottom:0;" />
+
+    <div class="shadow" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <img src="../img/cho_logo_v2.jpg" width="40">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html">Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link selected" href="#">Our Practice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="procedures.html">Procedures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="invisalign.html">Invisalign</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Smile Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient.html">Patient Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appointment.html">Appointment Request</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="bgimg-3">
+            <!-- <div class="caption">
+                <span class="border">OUR PRACTICE</span>
+            </div> -->
+        </div>
+
+        <ul class="nav nav-tabs">
+            <li class="w-25 nav-item">
+                <a class="nav-link active" id="practice-tab" data-toggle="pill" href="#practice" role="tab" aria-controls="practice" aria-selected="true">Our Practice</a>
+            </li>
+            <li class="w-25 nav-item">
+                <a class="nav-link" id="docter-tab" data-toggle="pill" href="#docter" role="tab" aria-controls="docter" aria-selected="false">Meet The Doctor</a>
+            </li>
+            <li class="w-25 nav-item">
+                <a class="nav-link" id="team-tab" data-toggle="pill" href="#team" role="tab" aria-controls="team" aria-selected="false">Meet The Team</a>
+            </li>
+            <li class="w-25 nav-item">
+                <a class="nav-link" id="office-tab" data-toggle="pill" href="#office" role="tab" aria-controls="office" aria-selected="false">Virtual Office Tour</a>
+            </li>
+        </ul>
+
+
+
+        <div class="content-body">
+
+            <div class="tab-content">
+                <div id="practice" class="tab-pane fade show active">
+
+                    <div class="container">
+                        <div class="row justify-content-center mt-4 pt-4">
+                            <div class="col-md-10">
+                                <h3 class="text-center font-weight-bold">We Welcome You With Warm Smiles To Our Practice!</h3>
+                                <hr class="my-5" />
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <p class="text-justify"><b>CHO ORTHODONTICS</b> is dedicated to providing each patient with the finest orthodontic care in a professional environment that inspires trust and confidence. We strive to identify and address the individual needs of our patients, and to always keep their best interests in mind. Our team is dedicated to educating patients and their families about the lifelong importance of a healthy, esthetic smile and functional bite, and we are committed to providing customer service that is of the highest quality.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <p class="text-justify">We are dedicated to providing professional and personal orthodontic care to you and your family. We strive to provide a setting where patients and their families will feel comfortable with our team, knowing that their needs are of supreme importance to us. We treat every patient with dignity, respect and appreciation. Our purpose is not only to straighten teeth, but to improve lives through a lifetime of beautiful smiles.
+                                </p>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <h3 class="font-weight-bold text-center">What Makes Our Office So Unique?</h3>
+                                <hr />
+                                <div id="accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="cursor:pointer;">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link text-dark text-left font-weight-bold p-0">
+                                                    1. Your Initial Consultation Is Free!
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body px-5">
+                                                Your first visit to our office will be a free exam for you or your child. Once our doctor carefully examine the teeth, we will discuss what type of treatment is necessary, how long it will take and estimate on how much it will cost. Call our office today for your complimentary consultation and find out what a difference a healthy smile can make in your life.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="cursor:pointer;">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link text-dark text-left font-weight-bold p-0 collapsed">
+                                                    2. We Offer 0% Interest Financing Plans
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                            <div class="card-body px-5">
+                                                As a convenience to patients and their families, our office offers a variety of payment options, which include:
+                                                <ul class="mt-3 mb-0">
+                                                    <li>0% Interest Financing Options</li>
+                                                    <li>Full Payment Discounts</li>
+                                                    <li>Multiple Family Member Discounts</li>
+                                                    <li>Wedding Discounts</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="cursor:pointer;">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link text-dark text-left font-weight-bold p-0 collapsed">
+                                                    3. Our Office Hours Are Flexible And Convenient, Including Evening, Weekends And Lunch Hour Appointments
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                            <div class="card-body px-5">
+                                                Available full-time, six days a week to care for all your orthodontic needs. Scheduling is very flexible and we can accommodate people at various times. We understand how hectic your schedule can be. Your time is valuable to us, that is why we offer early morning, lunch time and evening appointments. We strive to always be on time for every appointment. Plus we are open Saturdays too!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="cursor:pointer;">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link text-dark text-left font-weight-bold p-0 collapsed">
+                                                    4. You Will Receive High Quality Professional Care
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                            <div class="card-body px-5">
+                                                Dr. Cho is highly skilled clinician offering orthodontic treatment to help people look and feel better. Driven to become an excellent practitioner, Dr. Cho successfully completed extensive examinations to become both Canadian Board certified and a Diplomate of American Board of Orthodontics immediately after certificate program of Orthodontics. With personal attention given to every patient, Dr. Cho makes each individual feel confident and well looked after throughout their journey towards a beautiful smile. By combining state-of-the-art techniques with a truly warm and empathetic personality, Dr. Cho provides exceptional care for her patients, creating fantastic smiles!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="cursor:pointer;">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link text-dark text-left font-weight-bold p-0 collapsed">
+                                                    5. Uncompromising Safety
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                            <div class="card-body px-5">
+                                                Infection control in our office is also very important to us. To protect our patients and ourselves, we strictly maintain sterilization and cross contamination processes using standards recommended by the Royal College of Dental Surgeons of Ontario (RCDSO), the Occupational Safety and Health Administration (OSHA), and the Center for Disease Control (CDC).
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingSix" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="cursor:pointer;">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link text-dark text-left font-weight-bold p-0 collapsed">
+                                                    6. We use Digital X-rays
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                                            <div class="card-body px-5">
+                                                A new digital X-ray machine in our office provides immediate images for Dr. Cho to review. Digital X-ray machines expose patients far less radiation than conventional machines. There is no need for toxic chemicals to process the conventional film.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingSeven" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" style="cursor:pointer;">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link text-dark text-left font-weight-bold p-0 collapsed">
+                                                    7. Paperless Office
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                                            <div class="card-body px-5">
+                                                We use the most comprehensive Orthodontic management software to manage the office and patient’s paperwork. This allows us to consume less paper. Saving trees for future generations to come.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingEight" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight" style="cursor:pointer;">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link text-dark text-left font-weight-bold p-0 collapsed">
+                                                    8. Esthetic Options
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                                            <div class="card-body px-5">
+                                                Esthetic Options, Such As Invisalign And Invisalign Teen Are Offered At Cho Orthodontics.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingNine" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine" style="cursor:pointer;">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link text-dark text-left font-weight-bold p-0 collapsed">
+                                                    9. Dr. Cho And Her Staff
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                                            <div class="card-body px-5">
+                                                Dr. Cho And Her Staff Create A Fun And Positive Environment For Their Patients.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="docter" class="tab-pane fade">
+
+                    <div class="container">
+                        <div class="row justify-content-center mt-4 pt-4">
+                            <div class="col-md-10">
+                                <p>
+                                    <figure style="width:50%;float:right;margin:0 0 20px 30px;">
+                                        <img src="../img/dr_cho.jpg" style="width:100%;height:auto;" />
+                                        <figcaption class="mt-3" style="font-style:italic;">“I am passionate about my profession because it allows me to change people’s lives in a positive way. I feel very fortunate to be in a position to change people’s lives. It is priceless to see a beautiful smile on my patient at the end of their orthodontic care. A smile is the prettiest thing you can wear. ”&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Dr. Cho</figcaption>
+                                    </figure>
+
+                                    <h3 class="text-center font-weight-bold">Dr. Jangyeun "Janice" Cho</h3>
+                                    <hr class="my-5" />
+
+                                    <p class="text-justify">Dr. Cho loves being an orthodontist in the Richmond Hill as well as being active in the community. A desire to positively impact the lives of others is what brought her to the field of orthodontics. Her ability to create beautiful smiles and building lasting relationships with patients is what makes her an exceptional and compelling doctor. Dr. Cho is truly dedicated to improving the lives of those around her and she strives for perfection in patient care. She is excited to go to work every day knowing that the smiles she creates will last a lifetime.
+                                    </p>
+                                    <br />
+
+                                    <h6>Education</h6>
+                                    <p class="text-justify">After graduating from Thornhill Secondary School in Thornhill, Dr. Cho attended the University of Toronto to receive her Honours BSc in Pharmacology. With a strong passion for helping others, she pursued a career in dentistry, graduating from the Faculty of Dentistry at McGill University, receiving a Doctor of Dental Medicine degree.The DMD program at McGill is unique in that the first 18 months of training is entirely within the Faculty of Medicine. This comprehensive training included the entire human body and not just the mouth. After dental school, she continued at the University of British Columbia for her General Practice Residency. After practicing general dentistry for 6 years, her passion for Orthodontics and scientific research brought her to University of Minnesota to pursue a combined certification in the specialty of Orthodontics and Masters in Science in Oral Biology. Following graduation, Dr. Cho returned home and received her orthodontic fellowship in the Royal College of Dentists of Canada and established her private practice in Richmond Hill. Dr. Cho’s passion for excellence also propelled her to obtain the Diplomate status from American Board of Orthodontics (ABO).
+                                    </p>
+                                    <br />
+
+                                    <h6>Continuing Education</h6>
+                                    <p class="text-justify">Dr. Cho believes very strongly that education does not stop at graduation. Therefore, she regularly attends continuing education lectures and seminars to stay current in the latest advances in orthodontics. She makes sure that she applies everything she learned to the benefit of her patients. She knows it is both her professional and personal duty to learn the newest, evidence-based treatment options on a continual basis to offer her patients the very best treatments.
+                                    </p>
+                                    <br />
+
+                                    <h6>Affiliation</h6>
+                                    <p class="text-justify">To stay current in the field of orthodontics, Dr. Cho stays ahead of the curve through diverse professional affiliations. These include:
+                                        <ul>
+                                            <li><a href="https://www.rcdso.org" target="_blank">Royal College of Dental Surgeons of Ontario (RCDSO)</a></li>
+                                            <li><a href="https://www.rcdc.ca" target="_blank">Fellow of the Royal College of Dentists of Canada (RCDC)</a></li>
+                                            <li><a href="https://cao-aco.org" target="_blank">Canadian Association of Orthodontists (CAO)</a></li>
+                                            <li><a href="https://www.aaoinfo.org" target="_blank">American Association of Orthodontists (AAO)</a></li>
+                                            <li><a href="https://www.americanboardortho.com" target="_blank">Diplomate of the American Board of Orthodontics (ABO)</a></li>
+                                            <li><a href="https://www.aaofoundation.net" target="_blank">AAOF Vanguard Society</a></li>
+                                        </ul>
+                                    </p>
+                                    <br />
+
+                                    <h6>Outside the office</h6>
+                                    <p class="text-justify">When not in practice, Dr. Cho loves to travel to enjoy the beauty and diversity of life and spending time with her husband Sean and her little dog, Som. Their favourite past-time include Alaskan cruise and Yosemite National Park.
+                                    </p>
+
+                                </p>
+                            </div>
+
+                            <div class="col-md-5">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="team" class="tab-pane fade">
+
+                    <div class="container">
+                        <div class="row justify-content-center mt-4 pt-4">
+                            <div class="col-md-10">
+                                <h3 class="text-center font-weight-bold">We Welcome You With Warm Smiles To Our Practice!</h3>
+                                <hr class="my-5" />
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <p class="text-justify">Our friendly, dedicated, and energetic team is committed to working with you and your family to create a positive experience every time you visit our practice.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <p class="text-justify">The staff at CHO ORTHODONTICS is dedicated to providing the highest quality of orthodontic care in the safest and most effective manner possible. Our staff members are compassionate, friendly and accommodating. They stay current with new technology and techniques by attending continuing education courses on a consistent basis. Each member of Dr. Cho’s staff is professional, highly skilled and available to answer any concerns or questions you may have regarding your orthodontic treatment.
+                                </p>
+                            </div>
+                        </div>
+                        <br />
+                    </div>
+
+                </div>
+                <div id="office" class="tab-pane fade">
+
+                    <div class="container-fluid">
+                        <div class="row justify-content-center mt-4 pt-4">
+                            <div class="col-md-10">
+                                <iframe src="https://www.google.com/maps/embed?pb=!4v1549082528560!6m8!1m7!1sCAoSLEFGMVFpcE5TcHlXakFHOWxWM2ItRzVxQW1aWlYxcHVsZ2hGeml0N2NseWEw!2m2!1d43.843669082231!2d-79.408186173769!3f83.37175197462835!4f0.23379576600045482!5f0.7820865974627469" frameborder="0" style="border:0;width:100%;height:50vw;" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer mt-5">
+        <div class="p-2" style="background-color:#dedede;"></div>
+        <footer class="page-footer font-small bg-light pt-4 px-5 pb-3">
+            <div class="container-fluid text-center text-md-left">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 mt-md-0 mt-3">
+                        <h3 class="text-uppercase" style="font-weight:900;">CHO ORTHODONTICS</h3>
+                        <h6>Jangyeun Janice Cho, DMD, MSc, FRCD(C)</h6>
+                        <div style="border:1px solid #efefef;margin-bottom:16px;"></div>
+                        <p style="font-size:14px;">8750 Bayview Ave Unit 4
+                            <br />Richmond Hill, ON Canada L4B 4V9
+                            <br />Phone: <a href="tel:905-597-7992">(905) 597-7992</a>
+                            <br /><a href="mailto:info@Choyoursmile.com">info@Choyoursmile.com</a></p>
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <div class="col-md-1 mb-md-0 mb-3"></div>
+
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Office Hours</h5>
+                        <p>MON: Closed
+                            <br />TUE: 09:30am - 5:30pm
+                            <br />WED: Closed
+                            <br />THU: 09:30am - 5:30pm
+                            <br />FRI: 01:00am - 6:00pm <span style="color:red;font-size:14px;">*</span>
+                            <br />SAT: 10:00am - 4:00pm <span style="color:red;font-size:14px;">*</span>
+                            <br /><span style="color:red;font-size:10px;">* Alternating Friday and Saturday - Closed</span>
+                        </p>
+                    </div>
+
+                    <!-- <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Make an Appointment</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!">Link 4</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </footer>
+        <div class="bg-dark py-2">
+            <div class="text-center mt-3">
+                <ul class="list-unstyled list-inline text-center text-white">
+                    <li class="list-inline-item mr-4">
+                        Get connected with us on social networks!
+                    </li>
+                    <li class="list-inline-item mx-2">
+                        <a href="https://www.facebook.com/choyoursmile/" class="btn-floating btn-fb mx-1" style="color:inherit;">
+                            <i class="fab fa-facebook-f fa-2x"> </i>
+                        </a>
+                    </li>
+                    <!-- <li class="list-inline-item mx-2">
+                        <a class="btn-floating btn-tw mx-1" style="color:inherit;">
+                            <i class="fab fa-twitter fa-2x"> </i>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
