@@ -110,17 +110,18 @@
         // echo nl2br($email_body);
         // echo nl2br($headers);
 
-        if (mail($recipient, $subject, $message, $headers))
-        {
-            echo "Message accepted";
-        }
-        else
-        {
-            echo "Error: Message not accepted";
-        }
+        mail($recipient, $subject, $message, $headers);
 
-        // header('Location: ../views/main.html');
-        
+        // if (mail($recipient, $subject, $message, $headers))
+        // {
+        //     echo "Message accepted";
+        // }
+        // else
+        // {
+        //     echo "Error: Message not accepted";
+        // }
+
+        header('Location: ../views/main.html');
     } else {
         echo nl2br($errors);
     }
