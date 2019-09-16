@@ -302,3 +302,16 @@ h3 {
   color: #fff;
   background-color: #11a5a0;
 }
+
+#drcho_figure {
+  width: 50%;
+  float: right;
+  margin: 0 0 20px 30px;
+}
+
+@media only screen and (max-width: 460px) {
+  #drcho_figure {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
