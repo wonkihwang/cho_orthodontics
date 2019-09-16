@@ -304,6 +304,18 @@ h3 {
   margin: 0 0 20px 30px;
 }
 
+@media only screen and (max-width: 1024px) {
+  [class^="bgimg-"] {
+    width: 100%;
+    position: relative;
+    /* opacity: 0.85; */
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .caption {
     display: none;
