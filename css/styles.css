@@ -233,23 +233,22 @@ h3 {
 
 .nav-tabs>li>a {
   color: #fff;
-  /* font-family: 'Lobster', cursive; */
   font-size: 18px;
   font-weight: 600;
   height: 100%;
-  /* background-color: #555; */
   background-color: #1ecec8;
   text-align: center;
   text-decoration: none;
+  border: 1px solid #fff!important;
   border-radius: 0!important;
   padding: 15px 5px;
-  word-wrap: break-word;
+  /* word-wrap: break-word; */
 }
 
-.nav-tabs>li {
+/* .nav-tabs>li {
   border-right: 0.5px solid #ccc;
   border-left: 0.5px solid #ccc;
-}
+} */
 
 .content-line {
   width: 100%;
@@ -347,5 +346,8 @@ h3 {
   #drcho_figure {
     width: 100%;
     margin-bottom: 40px;
+  }
+  .nav-tabs .nav-item {
+    width: 100%!important;
   }
 }
