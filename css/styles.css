@@ -244,6 +244,14 @@ h3 {
   background-color: #1ecec8;
 }
 
+.carousel-item img {
+  min-width: 100%;
+  max-width: none;
+  width: 100%;
+  min-height: 280px;
+  object-fit: cover;
+}
+
 /******************** Contact Us Page ********************/
 
 #map_thumb {
