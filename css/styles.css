@@ -5,6 +5,15 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  color: #5bc0de;
+  font-weight: 400;
+}
+
+a:hover {
+  color: #3bece6;
+}
+
 #topBtn {
   display: none;
   position: fixed;
