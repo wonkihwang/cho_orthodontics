@@ -12,6 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
@@ -96,13 +97,13 @@
 
                 <!---------------------- APPOINTMENT FORM BEGINS -------------------->
 
-                <form method="post" name="appointment_form" action="../php/appointment_email.php">
+                <form method="post" id="appointment_form" action="../php/appointment_email.php">
 
                     <div class="row justify-content-center">
                         <div class="col-md-5">
                             <div class="form-group">
                                 <label for="appointment_name">Name <small style="color:red;">(Required)</small></label>
-                                <input type="text" class="form-control input-sm" id="appointment_name" name="appointment_name" />
+                                <input type="text" class="form-control input-sm" id="appointment_name" name="appointment_name" required />
                             </div>
                         </div>
                         <div class="col-md-5"></div>
@@ -128,8 +129,7 @@
                             <div class="form-group">
                                 <label for="appointment_prov">Province</label>
                                 <select class="form-control input-sm" id="appointment_prov" name="appointment_prov">
-                                    <option value="" selected hidden>-- Select --</option>
-                                    <option value="Ontario">Ontario</option>
+                                    <option value="Ontario" selected>Ontario</option>
                                     <option value="Quebec">Quebec</option>
                                     <option value="Nova Scotia">Nova Scotia</option>
                                     <option value="New Brunswick">New Brunswick</option>
@@ -157,7 +157,7 @@
                         <div class="col-md-5">
                             <div class="form-group">
                                 <label for="appointment_phone">Phone <small style="color:red;">(Required)</small></label>
-                                <input type="text" maxlength="12" class="form-control input-sm phone_num" id="appointment_phone" name="appointment_phone" />
+                                <input type="text" maxlength="12" class="form-control input-sm phone_num" id="appointment_phone" name="appointment_phone" required />
                             </div>
                         </div>
                         <div class="col-md-5">
